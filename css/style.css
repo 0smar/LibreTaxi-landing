@@ -1,0 +1,193 @@
+@import url(flexbox-framework.css);
+
+@font-face{
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/MontserratBold.ttf");
+}
+
+@font-face{
+  font-family: 'Benton';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/BentonSansExtraLight.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #414141;
+  background: transparent;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+}
+
+.intro{
+  width: 100%;
+  height: 100%;
+  background: url('../img/taxis.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.gradient{
+  width: 100%;
+  height: 100%;
+  padding: 3em;
+}
+
+.logo{
+  width: 25%;
+}
+
+.logo img{
+  width: 100%;
+  height: auto;
+}
+
+.phrase{
+  font-family: Montserrat;
+  color: rgba(0,153,0,1);
+  z-index: 1;
+  text-align: right;
+  font-size: 1.2em;
+  width: 50%;
+}
+
+.rw-sentence{
+  margin: 0;
+  text-align: left;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+  color: rgba(0,153,0,1);
+}
+
+.rw-sentence span{
+  color: rgba(0,153,0,1);
+  white-space: nowrap;
+  font-size: 95%;
+  font-weight: normal;
+}
+
+.rw-words{
+  display: inline;
+  text-indent: 10px;
+}
+
+.rw-words span{
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  color: #ffcc33;
+}
+
+.rw-words-1 span{
+  animation: rotateWordsFirst 12s linear infinite 0s;
+}
+
+.rw-words span:nth-child(2) { 
+  animation-delay: 3s; 
+  color: #ffcc33;
+}
+.rw-words span:nth-child(3) { 
+  animation-delay: 6s; 
+  color: #ffcc33; 
+}
+.rw-words span:nth-child(4) { 
+  animation-delay: 9s; 
+  color: #ffcc33;
+}
+
+@keyframes rotateWordsFirst {
+    0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
+    8% { opacity: 1; height: 60px; }
+    19% { opacity: 1; height: 60px; }
+    25% { opacity: 0; height: 60px; }
+    100% { opacity: 0; }
+}
+
+.info{
+  position: relative;
+  padding: 4em 0;
+  overflow: hidden;
+}
+
+.container{
+  width: 60%;
+}
+
+.description{
+  font-family: Benton;
+  margin-top: 2em;
+}
+
+.description p{
+  width: 60%;
+}
+
+.logo-info{
+  width: 40%;
+}
+
+.logo-info img{
+  width: 60%;
+}
+
+.ring{
+  width: 100%;
+  margin-top: 2em;
+}
+
+.rope{
+  margin: 8px 0;
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
+}
+
+.rope img{
+  width: 100%;
+}
+
+.upring{
+  width: 101%;
+  opacity: 0.1;
+}
+
+.upring .rope{
+  margin: 8px 0;
+  -ms-transform: rotate(10deg); /* IE 9 */
+  -webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+}
+
+.upring .rope img{
+  width: 100%;
+}
+
+.chars{
+  width: 100%;
+}
+
+.mock{
+  width: 50%;
+}
+
+.mock img{
+  width: 100%;
+}
+
+.char-desc{
+  width: 50%;
+}
